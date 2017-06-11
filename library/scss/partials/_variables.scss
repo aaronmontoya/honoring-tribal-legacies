@@ -1,0 +1,88 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: Variables
+
+Declare variables like colors, fonts, base values, and defaults.
+******************************************************************/
+
+/*********************
+COLORS
+*********************/
+
+$alert-yellow:							#ebe16f;
+$alert-red:								#fbe3e4;
+$alert-green:							#e6efc2;
+$alert-blue:							#d5edf8;
+
+$black:									#5f6062;
+$black-dark:							darken($black,9%);
+$black-darker:							darken($black,18%);
+$white:									#fff;
+$white-dark:							darken($white,9%);
+
+$black-screen:							rgba(0,0,0,0.18);
+$black-screen-more:						rgba(0,0,0,.5);
+$white-screen:							rgba(255,255,255,0.18);
+$white-screen-subtle:					rgba(255,255,255,0.02);
+
+$light-gray:							#f8f9fa;
+$gray:									#eaedf2;
+$text-color:							#5c6b80;
+$meta-gray:								#9fa6b4;
+
+$tan:									#eceee5;
+
+$green:									#7dd667;
+$yellow:								#ffff00;
+$red:									#ff0000;
+$orange:								#ff9900;
+
+$bones-pink:							#f01d4f;
+$blue:									#2980b9;
+
+$link-color:							$black;
+$color-link-hover:						darken($link-color, 9%);
+$color-nav-author-link:					$white;
+$color-nav-author-link-hover:			#fff;
+
+$border-color:							#ccc;
+$disabled-gray:							#cfcfcf;
+
+$nav-contributors:						#ffc92e;
+
+$menu-active:							lighten($black, 9%);
+$menu:									$black-dark;
+
+$curriculum-1-honey:					#0099ff;
+$curriculum-1-highlight:				lighten($curriculum-1-honey, 40%);
+
+$curriculum-2-inglebret:				#f69200;
+$curriculum-2-highlight:				lighten($curriculum-2-inglebret, 40%);
+
+$curriculum-3-brown:					#eac81c;
+$curriculum-3-highlight:				lighten($curriculum-3-brown, 40%);
+
+$curriculum-4-buswell:					#1ee093;
+$curriculum-4-highlight:				lighten($curriculum-4-buswell, 40%);
+
+$curriculum-5-cajune:					#67c9d1;
+$curriculum-5-highlight:				lighten($curriculum-5-cajune, 40%);
+
+$curriculum-6-doyle:					#ffbc71;
+$curriculum-6-highlight:				lighten($curriculum-6-doyle, 20%);
+
+$curriculum-7-lamb:						#dc4745;
+$curriculum-7-highlight:				lighten($curriculum-7-lamb, 40%);
+
+$transparent-white:						rgba(255,255,255,0.15);
+
+$nav-introduction:						#5f6062;
+$nav-early-childhood:					#79dbb7;
+$nav-elementary:						#5dbf9c;
+$nav-intermediate:						#79dbb7;
+$nav-secondary:							#5dbf9c;
+$nav-post-secondary:					#79dbb7;
+$nav-no-download:						$nav-post-secondary;
+$nav-download:							#4eb9ff;

@@ -1,0 +1,40 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: Typography
+******************************************************************/
+
+/*********************
+FONT FACE
+*********************/
+
+// base font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+$pt-serif:              'PT Serif', $serif;
+$pt-serif-caption:      'PT Serif Caption', $serif;
+$pt-sans:               'PT Sans', $sans-serif;
+$pt-sans-narrow:        'PT Sans Narrow', $sans-serif;
+$narrow:                'Yanone Kaffeesatz', $sans-serif;
+$source-sans-pro:       'Source Sans Pro', $sans-serif;
+$adobe-garamond-pro:    'adobe-garamond-pro', $serif;
+
+/*
+typographical defaults
+*/
+p {
+  // turning off hyphenation
+  -webkit-hyphens:        none;
+     -moz-hyphens:        none;
+          hyphens:        none;
+
+  // enabling fancy ligatures when available
+  -webkit-font-feature-settings: "liga", "dlig";
+   -moz-font-feature-settings: "liga=1, dlig=1";
+      -ms-font-feature-settings: "liga", "dlig";
+       -o-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";
+}
+

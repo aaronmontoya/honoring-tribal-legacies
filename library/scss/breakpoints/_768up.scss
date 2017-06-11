@@ -1,0 +1,866 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: Tablet and Small Desktop Stylesheet
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	margin-top:					105px;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:					4.3em;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header-items {
+	padding:					9px 27px;
+
+	li {
+		margin-left:				18px;
+	}
+}
+
+.logo-type {
+	font-size:					4.5em;
+}
+
+.logo-header-nps {
+	height:						80px;
+	width:						64px;
+}
+
+.icon-menu {
+	box-shadow:					0 3px 0 0 $black-darker;
+	font-size:					0.9em;
+	padding:					18px;
+	width:						75px;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+nav {
+	margin-top:					107px;
+}
+
+.nav {
+	border:						0;
+
+	ul {
+		padding-left:				36px;
+	}
+
+	li {
+
+		&:nth-child(2) span {
+			max-width:					250px;
+		}
+
+		&:nth-child(6) span {
+			max-width:					290px;
+		}
+
+		&:nth-child(12) span {
+			max-width:					260px;
+		}
+
+		&:nth-child(14) span {
+			max-width:					170px;
+		}
+
+		a {
+			border-bottom:				0;
+		}
+
+		ul.sub-menu,
+		ul.children
+		{
+			border:						1px solid #ccc;
+			border-top:					0;
+			margin-top:					0;			
+			position:					absolute;
+			visibility:					hidden;
+			z-index:					8999;
+
+			li {
+				a {
+					border-bottom:				1px solid #ccc;
+					border-right:				0;
+					display:					block;
+					padding-left:				10px;
+					width:						180px;
+
+				&:last-child {
+					a {
+						border-bottom:				0;
+					}
+				}
+			}
+		}
+
+	}
+	/* end .menu ul li */
+
+	.nav-download {
+		&:last-child {
+			padding-bottom:				150px;
+		}
+	}
+
+}
+/* end .nav */
+
+a.nav-description {
+	font-size:						1.75em;
+	vertical-align:					top;
+	width:							50%;
+}
+
+.nav-authors, .nav-authors-no-title {
+	display:						inline-block;
+	line-height:					1;
+	margin:							0;
+	max-width:						50%;
+
+	li {
+		font-size:						1.125em;
+		margin-top:						18px;
+
+		div {
+			display:						inline-block;
+		}
+	}
+
+	img {
+		border-radius:					54px;
+		float:							left;
+		height:							54px;
+		width:							54px;
+	}
+
+	p {
+		margin-left:					64px;
+		padding:						0 2.5em 0 .75em;
+	}
+}
+
+.nav-current {
+	padding:						54px 27px 120px;
+
+	& > div:last-child a {
+		font-size:						1.25em;
+	}
+
+	h1 {
+		font-size:						2.25em;
+	}
+
+	ol li a {
+		font-size: 1.5em;
+
+		&:before {
+			padding:						12px;
+		}
+
+		div {
+			padding:						12px;
+
+			h2, h3 {
+				font-size:						1.25em;
+			}
+		}
+	}
+
+	ul li a {
+	  font-size:						1.25em;
+	  padding:							12px;
+	}
+}
+
+.nav-current-brown {
+	ol li {
+		&:first-child h2 {
+			max-width:							none;
+		}
+
+		&:nth-child(3) h2 {
+			max-width:							none;
+		}
+
+		&:nth-child(4) h2 {
+			max-width:							490px;
+		}
+
+		&:nth-child(5) h2 {
+			max-width:							630px;
+		}
+	}
+}
+
+.nav-download-copy {
+	margin-left:						100px;
+}
+
+.nav-contributors {
+	li {
+		display:						inline-block;
+		padding:						0 27px 18px;
+		width:							50%;
+
+		a img {
+			height:							90px;
+			width:							90px;
+		}
+
+		a.contributors-icon-anonymous {
+			font-size:						45px;
+			height:							90px;
+			line-height:					80px;
+			width:							90px;
+		}
+
+		h3 {
+			font-size:						1.75em;
+		}
+
+		p {
+			font-size:						1.1875em;
+		}
+
+		&:first-child,
+		&:nth-child(2)
+		{
+			display:						block;
+			width:							auto;
+		}
+
+		&:nth-child(2) {
+			max-width:						700px;
+			padding-bottom:					45px;
+		}
+
+	}
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.container-curriculum-2-ella-inglebret {
+	div[class="container-table-row"]:nth-of-type(1) {
+		div[class*="table"] {
+			div:nth-of-type(1) {
+				height:							100px;
+			}
+
+			div:nth-of-type(2) {
+				height:							270px;
+			}
+
+			div:nth-of-type(3),
+			div:nth-of-type(4)
+			{
+				height:							90px;
+			}
+
+			div:nth-of-type(5) {
+				height:							250px;
+
+				ul {
+					margin:							0;
+				}
+			}
+
+			&:first-child {
+				div:nth-of-type(2) {
+					height:							116px;
+				}
+
+				div:nth-of-type(3) {
+					height:							270px;
+				}
+
+				div:nth-of-type(4),
+				div:nth-of-type(5)
+				{
+					height:							90px;
+				}
+
+				div:nth-of-type(6) {
+					height:							250px;
+				}
+			}
+		}
+
+		div[class*="table-key"]:first-of-type {
+			display:						table-cell;
+
+			div:first-of-type {
+				display:					none;
+			}
+
+			div:nth-of-type(2) {
+				border:						0;
+			}
+		}
+	}
+
+	div[class="container-table-row"]:nth-of-type(2) {
+		div[class*="table"] {
+			div:nth-of-type(1) {
+				height:						75px;
+			}
+
+			div:nth-of-type(2) {
+				height:						250px;
+			}
+
+			div:nth-of-type(3) {
+				height:						90px;
+			}
+
+			div:nth-of-type(4) {
+				height:						150px;
+			}
+
+			div:nth-of-type(5) {
+				height:						190px;
+
+				ul {
+					margin:						0;
+				}
+			}
+		}
+	}
+
+	div[class="container-table-row"]:nth-of-type(3) {
+		div[class*="table"] {
+			div:nth-of-type(1) {
+				height:						30px;
+			}
+
+			div:nth-of-type(2) {
+				height:						180px;
+			}
+
+			div:nth-of-type(3) {
+				height:						110px;
+			}
+
+			div:nth-of-type(4) {
+				height:						170px;
+			}
+
+			div:nth-of-type(5) {
+				height:						190px;
+
+				ul {
+					margin:						0;
+				}
+			}
+		}
+	}
+}
+
+.entry-content {
+	padding:					0 27px 180px;
+
+	audio,
+	img,
+	svg,
+	video
+	{
+		margin-top:					27px;
+	}
+
+	ul,
+	ol
+	{
+
+		img,
+		.container-table
+		{
+			& + li {
+				margin-top:					54px;
+			}
+		}
+
+		li {
+			font-size:					1.0625em;
+		}
+	}
+
+	h1 {
+		margin-top:					72px;
+	}
+
+	h1 + h1,
+	h1 + h2,
+	h1 + h3,
+	h1 + h4,
+	h2 + h2,
+	h2 + h3,
+	h2 + h4,
+	h3 + h3,
+	h3 + h4
+	{
+		margin-top:					36px;
+	}
+
+	h2,
+	h3,
+	h4
+	{
+		margin-top:					63px;
+	}
+
+	p,
+	ol,
+	ul,
+	div + ol,
+	div + ul,
+	h1 + ol,
+	h2 + ol,
+	h3 + ol,
+	h4 + ol,
+	h1 + ul,
+	h2 + ul,
+	h3 + ul,
+	h4 + ul
+	{
+		margin-top:					54px;
+	}
+
+	p + p {
+		margin-top:					18px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4
+	{
+		font-size:					2.5em;
+	}
+
+	iframe {
+		height:						425px;
+	}
+
+	p,
+	td,
+	th
+	{
+		font-size:					1.0625em;
+	}
+
+	p,
+	ol,
+	ul
+	{
+		margin-left:				auto;
+		margin-right:				auto;
+	}
+
+	.art-constrain {
+		display:					block;
+		margin-left:				auto;
+		margin-right:				auto;
+	}
+
+	.caption,
+	.caption-with-toggle
+	{
+		margin-left:				auto;
+		margin-right:				auto;
+	}
+
+	.container-curriculum-section-open {
+		margin:						120px -27px 0;
+		padding:					60px 27px 27px;
+
+		h1 {
+			font-size:					2.75em;
+			letter-spacing:				0;
+		}
+
+		h1 + h1,
+		h1 + h2,
+		h3 + h3,
+		h3 + h4,
+		h4 + h4
+		{
+			margin-top:					0.5em;
+		}
+
+		h2 {
+			font-size:					2.75em;
+		}
+
+		h3, h4 {
+			font-size:					2.5em;
+		}
+	}
+
+	.icon-honey-inside-activity,
+	.icon-honey-outside-activity
+	{
+		height:						85px;
+
+		& + h3 {
+			margin-left:				90px;
+
+			& + h4 {
+				margin-top:					45px;
+			}
+		}
+	}
+
+	.icon-honey-inside-activity {
+		top:						35px;
+	}
+
+	.svg-sacred-hoop {
+		height:						642px;
+		height:						100%;
+		min-height:					642px;
+	}
+
+	.table div ul li {
+		font-size:					1.3em;
+	}
+
+	.quote, .callout {
+		margin-top:					36px;
+
+		p {
+			font-size:					4.5em;
+		}
+	}
+
+	.quote-end {
+		margin-top:					36px;
+	}
+}
+
+ul.category-tags > li {
+	font-size:					2em;
+}
+
+.container-curriculum-open {
+	margin:						0 -27px -120px;
+	padding:					60px 27px 90px;
+
+	h1 {
+		font-size:					5em;
+		margin:						0;
+	}
+
+	h2 {
+		font-size:					3.75em;
+	}
+
+	ul {
+		margin:						0;
+		margin-top:					90px;
+
+		li {
+			a {
+				font-size:					2.5em;
+				margin:						18px 0 0 18px;
+			}
+
+			img, .icon-avatar-empty {
+				width:						90px;
+				height:						90px;
+				border-radius:				90px;
+
+				&::before {
+					font-size:					48px;
+				}
+			}
+		}
+	}
+
+	h1, h2 {
+		& + ul {
+			margin-top:					90px;
+		}
+	}
+}
+
+.container-curriculum-toc {
+	ul:last-child {
+		margin-top:					120px;
+	}
+
+	ul li a {
+		font-size:						1.625em;
+		padding:						18px;
+	}
+
+	h2 {
+		font-size:						2.75em;
+	}
+}
+
+table.days-of-week {
+	td {
+		padding:						27px;
+	}
+
+	th {
+		padding-top:					27px;
+	}
+}
+
+.icon-learning-episode, .icon-appendix {
+	&:before {
+		padding:						18px;
+	}
+
+	div {
+		padding:						18px;
+	}
+}
+
+.icon-pdf {
+	div {
+		top:							-51px;
+		margin-bottom:					-70px;
+		margin-left:					50px;
+	}
+}
+
+.tighten-4 {
+	max-width:						10.5em;
+}
+
+.tighten-5 {
+	max-width:						initial;
+}
+
+.container-table {
+	display:						table;
+	margin:							90px 0 0;
+
+	& + * {
+		clear:							both;
+	}
+
+	.table-key {
+		text-align:						right;
+		position:						relative;
+		font-style:						italic;
+		display:						table-cell;
+	}
+
+	.table {
+		margin:							0;
+	
+		p {
+			margin:							0;
+		}
+	}
+}
+
+.container-table-row {
+	display:						table-row;
+}
+
+.table {
+	display:						table-cell;
+	width:							33.3%;
+	border:							0;
+	padding:						0 15px;
+
+	&:first-of-type {
+		width:							20%;
+		top:							-6px;
+	}
+}
+
+.copy-highlight {
+	margin-left:					auto;
+	margin-right:					auto;
+}
+
+.copy-highlight + ul {
+	margin:							72px auto 0;
+}
+
+.caption, .caption-with-toggle {
+	margin:							0;
+
+	p {
+		font-size:						1em;
+	}
+}
+
+.container-curriculum-3-shana-brown {
+	.container-curriculum-toc {
+		ol li {
+			&:first-child h2 {
+				max-width:						260px;
+			}
+
+			&:nth-child(3) h2,
+			h3
+			{
+				max-width:						370px;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:						440px;
+			}
+		}
+
+	}
+}
+
+
+/*********************
+CONTRIBUTOR PAGE STYLES
+*********************/
+
+.page-contributor {
+	h1 {
+		font-size:						3.75em;
+		margin-top:						27px;
+
+		& + p {
+			margin-top:							63px;
+		}
+	}
+
+	.avatar {
+		width:							300px;
+		height:							300px;
+	}
+
+	.color-band {
+		margin:							0 -27px -150px;
+		height:							250px;
+	}
+
+	.contributors-icon-anonymous {
+		font-size:							170px;
+		line-height:						1.5;
+	}
+
+	.large-display-hidden {
+		display:							none;
+	}
+
+	.mobile-hidden {
+		display:							block;
+	}
+}
+
+/*********************
+INTRODUCTION PAGE STYLES
+*********************/
+
+.page-introduction {
+	.bg-introduction {
+		h1 {
+			font-size:					5em;
+			padding-top:				250px;
+		}
+	}
+
+	.container-btn-access-curricula .btn-access-curricula {
+		margin-top:					54px;
+		font-size:					1.25em;
+	}
+
+	.lbl-show-chapters {
+		font-size:					1.25em;
+	}
+
+	.introduction-body {
+		padding-left:					27px;
+		padding-right:					27px;
+		padding-bottom:					150px;
+		margin-left:					-27px;
+		margin-right:					-27px;
+
+		p:first-of-type {
+			padding-top:					54px;
+		}
+
+		.contributors-grid {
+			li {
+				margin-top:						45px;
+				width:							32.97%;
+
+				h5 {
+					font-size:						1.25em;
+					letter-spacing:					2px;
+					margin-top:						18px;
+					word-spacing:					2px;
+				}
+
+				img {
+					height:							150px;
+					width:							150px;
+				}
+			}
+		}
+	}
+}
+
+/*********************
+FORM STYLES
+*********************/
+
+div.wpcf7-response-output {
+	font-size:						1.25em;
+}
+
+input[type="submit"] {
+ 	font-size:          			1.25em;
+ 	margin:             			54px auto 0;
+ 	padding:            			18px 27px;
+}
+
+.wpcf7-form {
+ 	p {
+    	font-size:          			1.25em;
+    	margin:             			27px 27px 0;
+ 	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.btn-top a {
+	font-size:						1.75em;
+}
+
+.footer-logo {
+	svg {
+		height:							331px;
+	}
+}
+
+.container-copyright {
+	margin-left:						54px;
+	margin-right:						54px;
+	padding-bottom:						72px;
+}

@@ -1,0 +1,388 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: iPad
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	margin-top:									115px;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav li {
+	&:nth-child(2) span {
+		max-width:								none;
+	}
+
+	&:nth-child(4) span {
+		max-width:								330px;
+	}
+
+	&:nth-child(6) span {
+		max-width:								390px;
+	}
+
+	&:nth-child(8) span {
+		max-width:								290px;
+	}
+
+	&:nth-child(12) span {
+		max-width:								none;
+	}
+
+	&:nth-child(14) span {
+		max-width:								none;
+	}
+}
+
+.nav-current {
+	ul,
+	ol
+	{
+		-webkit-columns:						2;
+		-moz-columns:							2;
+		columns:								2;
+	}
+}
+
+.nav-current-brown {
+	ol li {
+		&:first-child h2 {
+			max-width:								340px;
+		}
+
+		&:nth-child(3) h2 {
+			max-width:								280px;
+		}
+
+		&:nth-child(4) h2 {
+			max-width:								370px;
+		}
+	}
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.logo-header-coe {
+	height:									auto;
+	width:									318px;
+}
+
+.logo-type {
+	font-size:								5.45em;
+}
+
+.header-items li {
+	margin-left:							27px;
+
+	&:last-of-type {
+		display:								inline-block;
+	}
+}
+
+.logo-header-nps,
+.logo-header-uo
+{	
+	height:									90px;
+	width:									72px;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:								3.699em;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.entry-content {
+
+	h1 {
+		margin-top:							81px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4
+	{
+		font-size:							2.75em;
+	}
+
+	h2,
+	h3,
+	h4
+	{
+		margin-top:							72px;
+	}
+
+	iframe {
+		height:								600px;
+	}
+
+	ol, p, ul,
+	div + ol,
+	div + ul,
+	h1 + ol,
+	h2 + ol,
+	h3 + ol,
+	h4 + ol,
+	h1 + ul,
+	h2 + ul,
+	h3 + ul,
+	h4 + ul
+	{
+		margin-top:							63px;
+	}
+
+	.icon-honey-inside-activity, .icon-honey-outside-activity {
+		height:								95px;
+
+		& + h3 {
+			margin-left:						99px;
+
+			& + h4 {
+				margin-top:							54px;
+			}
+		}
+	}
+
+	.icon-honey-inside-activity {
+		top:								42px;
+	}
+
+	.icon-honey-outside-activity {
+		top:								20px;
+	}
+
+	.table-responsive {
+		thead,
+		tbody
+		{
+			display:							table-header-group;
+			width:								100%;
+
+			&:last-of-type {
+				td, th {
+					&:last-child {
+						border-bottom:						1px solid #000000;
+					}
+				}
+			}
+
+			tr {
+				display:							table-row;
+			}
+
+			td,
+			th
+			{
+				display:							table-cell;
+				border-left:						1px solid #000000;
+				border-bottom:						1px solid #000000;
+			}
+		}
+	}
+
+	.quote, .callout {
+		p {
+			font-size:							5.25em;
+		}
+	}
+}
+
+.container-curriculum-open {
+	margin:								0 -27px -120px;
+	padding:							60px 27px;
+
+	h1 {
+		font-size:							6em;
+		margin:								0;
+	}
+
+	h2 {
+		font-size:							4.25em;
+	}
+
+	img {
+		margin:								60px 0 0;
+	}
+}
+
+.container-curriculum-open h2 + ul {
+	margin-top:							90px;
+}
+
+.container-curriculum-section-open {
+	margin:								120px -27px 0;
+	padding:							90px 27px 27px;
+
+	div {
+		margin:								180px auto;
+	}
+
+	h1,
+	h2
+	{
+		font-size:							3.5em;
+	}
+
+	h1 {
+		letter-spacing:						-.01875em;
+	}
+
+	h2 {
+		letter-spacing:						-0.025em;
+	}
+
+	h3,
+	h4
+	{
+		font-size:							3em;
+	}
+}
+
+.container-curriculum-toc{
+	ul, ol {
+		max-width:							initial;
+	}
+
+	ol {
+		margin:								36px 0 0;
+
+		li {
+			&:last-child a div div h3 {
+				max-width:							initial;
+			}
+		}
+	}
+		
+
+	h2 > {
+		font-size:							3.25em;
+	}
+}
+
+.caption, .caption-with-toggle {
+	p {
+		font-size:							1.06125em;
+		word-spacing:						0.25em;
+	}
+}
+
+.caption-with-toggle p {
+	height:								60px;
+}
+
+ul.category-tags > li {
+	font-size:							2em;
+}
+
+table.days-of-week {
+	tr:first-of-type {
+		th::before {
+			content:							"MONDAY";
+		}
+	}
+
+	tr:nth-of-type(2) {
+		th::before {
+			content:							"TUESDAY";
+		}
+	}
+
+	tr:nth-of-type(3) {
+		th::before {
+			content:							"WEDNESDAY";
+		}
+	}
+
+	tr:nth-of-type(4) {
+		th::before {
+			content:							"THURSDAY";
+		}
+	}
+
+	tr:nth-of-type(5) {
+		th::before {
+			content:							"FRIDAY";
+		}
+	}
+}
+
+.icon-pdf {
+	div {
+		top:								-61px;
+		right:								-29px;
+		margin-bottom:						-90px;
+		margin-left:						50px;
+	}
+}
+
+.icon-appendix {
+	h2 {
+		margin:								-29px;
+		margin-left:						60px;
+		padding:							30px;
+	}
+}
+
+.tighten-1 {
+	max-width:							18em;
+}
+
+.container-table .table-key {
+	top:								-10px;
+	padding:							0 30px;
+}
+
+.copy-highlight h5 {
+	font-size:							1.75em;
+}
+
+.container-curriculum-3-shana-brown {
+	.container-curriculum-toc {
+		ol li {
+			&:first-child h2 {
+				max-width:							none;
+			}
+
+			&:nth-child(3) h2 {
+				max-width:							none;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:							840px;
+			}
+		}
+	}
+}
+
+/*********************
+CONTRIBUTOR PAGE STYLES
+*********************/
+
+.page-contributor {
+	h1 {
+		font-size:							4.5em;
+		margin-top:							36px;
+
+		& + p {
+			margin-top:							72px;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: Desktop Stylesheet
+******************************************************************/
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav li {
+	&:nth-child(4) span {
+		max-width:						none;
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:						3.75em;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.logo-type {
+	font-size:						5.6em;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.entry-content {
+	ul.category-tags > li {
+		font-size:						2.25em;
+	}
+
+	.container-curriculum-open h1 {
+		font-size:						6.5em;
+		margin:							0;
+	}
+
+	.container-curriculum-section-open {
+		svg {	
+			height:							0;
+		}
+	}
+
+	.tighten-2,
+	.tighten-3
+	{
+		max-width:						100%;
+	}
+}

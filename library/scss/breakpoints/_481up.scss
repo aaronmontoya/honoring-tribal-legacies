@@ -1,0 +1,482 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices.
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	margin-top:						65px;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+nav {
+	margin-top:						68px;
+}
+
+.nav li {
+	&:nth-child(2) span {
+		max-width:						none;
+	}
+
+	&:nth-child(4) span {
+		max-width:						none;
+	}
+
+	&:nth-child(6) span {
+		max-width:						320px;
+	}
+
+	&:nth-child(12) span {
+		max-width:						370px;
+	}
+
+	&:nth-child(14) span {
+		max-width:						none;
+	}
+}
+
+.nav-authors li, .nav-authors-no-title li {
+	
+}
+
+a.nav-description {
+	padding:						18px;
+}
+
+.nav-current {
+	ol li {
+		&:nth-child(4) h3 {
+			max-width:						none;
+		}
+
+		a div {
+			h2, h3 {
+				max-width:						370px;
+			}
+		}
+	}
+}
+
+.nav-current-brown {
+	ol li {
+		&:first-child h2 {
+			max-width:						310px;
+		}
+
+		&:nth-child(2) h3 {
+			max-width:						none;
+		}
+
+		&:nth-child(4) h2 {
+			max-width:						300px;
+		}
+
+		&:nth-child(5) h2 {
+			max-width:						none;
+		}
+	}
+}
+
+.nav-current-buswell {
+	ol li {
+		&:nth-child(2) h2 {
+			max-width:						none;
+		}
+
+		&:nth-child(3) h2 {
+			max-width:						none;
+		}
+
+		&:nth-child(4) h2 {
+			max-width:						none;
+		}
+
+		&:nth-child(8) h2 {
+			max-width:						none;
+		}
+
+		&:nth-child(10) h2 {
+			max-width:						none;
+		}
+	}
+
+	ul:nth-of-type(2) {
+		li:nth-of-type(2) a {
+			max-width:						none;
+		}
+	}
+}
+
+.nav-current-lamb {
+	ol:nth-of-type(2) {
+		li:first-child h2 {
+			max-width:						none;
+		}
+
+		li:nth-child(4) h2 {
+			max-width:						none;
+		}
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:						2.7em;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.logo-type {
+	font-size:						3.125em;
+}
+
+.header-items {
+	li {
+		margin-left:					18px;
+	}
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+/* entry content */
+.entry-content {
+	h1, h2, h3, h4 {
+		font-size:						2em;
+	}
+
+	.callout {
+		margin:							63px 0 0;
+	}
+
+	.container-curriculum-section-open {
+		h1, h2 {
+			font-size:						2.125em;
+		}
+
+		h3, h4 {
+			font-size:						2em;
+		}
+	}
+
+	.icon-honey-inside-activity, .icon-honey-outside-activity {
+		height:							65px;
+
+		& + h3 {
+			margin-left:					72px;
+		}
+	}
+
+	.svg-sacred-hoop {
+		height:							400px;
+		height:							100%;
+		min-height:						400px;
+	}
+
+	.table-responsive-constrain-col-1 {
+		max-width:						none;
+	}
+
+	.table-responsive-height-cell-2 {
+		line-height:					1.5;
+	}
+
+	.table-responsive-height-cell-3 {
+		line-height:					1.5;
+	}
+
+	.quote, .callout {
+		p {
+			font-size:						3em;
+		}
+	}
+} /* end .entry-content */
+
+.container-curriculum-toc {
+
+	ul li a {
+		font-size:						1.5em;
+	}
+
+	ul, ol {
+		li {
+			font-size:						1em;
+		}
+
+		&:nth-child(10) div::before {
+			left:							-8px;
+		}
+	}
+}
+
+ul.category-tags > li {
+	font-size:						1.5em;
+}
+
+.container-curriculum-open {
+	h1 {
+		font-size:						3.5em;
+	}
+
+	h2 {
+		font-size:						2.5em;
+	}
+}
+
+.container-curriculum-open-2-ella-inglebret h1 {
+	max-width:						8em;
+}
+
+.icon-learning-episode, .icon-pdf, .icon-appendix {
+	font-size:						1.5em;
+}
+
+.icon-learning-episode div {
+	margin-bottom:					-69px;
+}
+
+.tighten-1 {
+	max-width:						11em;
+}
+
+.tighten-6 {
+	max-width:						initial;
+}
+
+/*********************
+CUSTOMIZATION BY AUTHOR
+*********************/
+
+.container-curriculum-2-ella-inglebret {
+	.container-curriculum-toc {
+		ol li {
+			&:first-child h3 {
+				max-width:						none;
+			}
+
+			&:nth-child(2) h3 {
+				max-width:						none;
+			}
+
+			&:nth-child(3) h3 {
+				max-width:						none;
+			}
+
+			&:nth-child(4) h3 {
+				max-width:						none;
+			}
+		}
+
+		ul li {
+			&:last-child a {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+.container-curriculum-3-shana-brown {
+	.container-curriculum-toc {
+		ol li {
+			&:first-child h2 {
+				max-width:						230px;
+			}
+
+			&:nth-child(3) h2, h3 {
+				max-width:						320px;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:						380px;
+			}
+
+			&:nth-child(5) h2 {
+				max-width:						250px;
+			}
+		}
+	}
+}
+
+.container-curriculum-4-carol-buswell {
+	.container-curriculum-toc {
+		ol li {
+			&:nth-child(2) h2 {
+				max-width:						230px;
+			}
+
+			&:nth-child(3) h2 {
+				max-width:						210px;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:						300px;
+			}
+
+			&:nth-child(7) h2 {
+				max-width:						none;
+			}
+
+			&:nth-child(8) h2 {
+				max-width:						220px;
+			}
+
+			&:nth-child(10) h2 {
+				max-width:						210px;
+			}
+		}
+
+		ul:first-of-type {
+			li:nth-of-type(6) a {
+				max-width:						none;
+			}
+		} 
+
+		ul:nth-of-type(2) {
+			li:nth-of-type(2) a {
+				max-width:						260px;
+			}
+
+			li:nth-of-type(3) a {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+.container-curriculum-5-julie-cajune {
+	.container-curriculum-toc {
+		ul:first-of-type {
+			li:first-child a {
+				max-width:						none;
+			}
+
+			li:nth-child(6) a {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+.container-curriculum-7-carmelita-lamb {
+	.container-curriculum-toc {
+		ol:nth-of-type(2) {
+			li:first-child h2 {
+				max-width:						220px;
+			}
+
+			li:nth-child(4) h2 {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+/*********************
+CONTRIBUTOR PAGE STYLES
+*********************/
+
+.page-contributor {
+	h1 {
+		font-size:						3em;
+		margin-top:						27px;
+	}
+}
+
+/*********************
+INTRODUCTION PAGE STYLES
+*********************/
+
+.page-introduction {
+	.bg-introduction {
+		h1 {
+			font-size:						3.5em;
+		}
+	}
+
+	.introduction-body {
+		padding-bottom:					120px;
+		
+		.contributors-grid {
+			li {
+				margin-top:						36px;
+			}
+		}
+	}
+
+	.width-constrain-1 {
+		max-width:						365px;
+	}
+
+	.width-constrain-2 {
+		max-width:						410px;
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.container-footer-content {
+	max-width:						442px;
+}
+
+.container-copyright {
+	margin-top:						72px;
+}
+
+.copyright {
+	font-size:						0.9em;
+}
+
+.container-site-designer-link .site-designer-link {
+	margin-top:						54px;
+}
+
+.footer-logo {
+	svg{
+		height:							274px;
+	}
+}
+
+.footer-logo-images {
+	padding:						18px;
+	max-height:						150px;
+}
+
+.footer-nav {
+	padding-left:					36px;
+	padding-right:					36px;
+
+	li {
+		padding:						36px 0 0;
+
+		a {
+			font-size:						2em;
+		}
+	}
+}
+
+.nav-bttm-btn-feedback {
+	font-size:						2em;
+	padding:						36px;
+}
+
+.nav-footer {
+	margin-top:						45px;
+}

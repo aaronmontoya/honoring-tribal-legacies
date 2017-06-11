@@ -1,0 +1,477 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: 575up
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	margin-top:							85px;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:							3.125em;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header-items li {
+	&:nth-of-type(3) {
+		display:							inline-block;
+	}
+}
+
+.logo-header-nps {
+	height:								60px;
+	width:								auto;
+	margin-top:							5px;
+}
+
+.logo-type {
+	font-size:							3.25em;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+nav {
+	margin-top:							87px;
+}
+
+.nav li {
+	&:nth-child(8) span {
+		max-width:							none;
+	}
+}
+
+.nav-current {
+	& > div:last-child a {
+		max-width:							none;
+	}
+
+	ol li a div {
+		h2,
+		h3
+		{
+			max-width:							400px;
+		}
+	}
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.entry-content {
+	padding-bottom:						180px;
+
+	h1,
+	h2,
+	h3,
+	h4
+	{
+		font-size:						2em;
+	}
+
+	iframe {
+		height:							325px;
+	}
+
+	h1
+	{
+		margin-top:						63px;
+	}
+
+	h2,
+	h3,
+	h4
+	{
+		margin-top:						54px;
+	}
+
+	p,
+	ol,
+	ul,
+	div + ol,
+	div + ul,
+	h1 + ol,
+	h2 + ol,
+	h3 + ol,
+	h4 + ol,
+	h1 + ul,
+	h2 + ul,
+	h3 + ul,
+	h4 + ul
+	{
+		margin-top:						45px;
+	}
+
+	p,
+	ul,
+	ol,
+	.footnote,
+	.copy-highlight,
+	.caption,
+	.caption-with-toggle,
+	.container-table
+	{
+		max-width:						700px;
+	}
+
+	.caption, .caption-with-toggle {
+		p {
+			word-spacing:					0.125em;
+		}
+	}
+
+	.container-curriculum-section-open {
+		h1 {
+			font-size:						2.5em;
+			letter-spacing:					0.00625em;
+		}
+
+		h2 {
+			font-size:						2.5em;
+		}
+
+		h3, h4 {
+			font-size:						2.25em;
+		}
+
+		div {
+			height:							150px;
+		}
+	}
+
+	.icon-honey-inside-activity, .icon-honey-outside-activity {
+		height:							75px;
+
+	  & + h3 {
+	  	margin-left:					81px;
+
+	  	& + h4 {
+	  		margin-top:						36px;
+	  	}
+	  }
+	}
+
+	.icon-honey-inside-activity {
+		top:							33px;
+	}
+
+	.icon-honey-outside-activity {
+		top:							15px;
+	}
+
+	.svg-sacred-hoop {
+		height:							485px;
+		height:							100%;
+		min-height:						485px;
+	}
+
+	.table-responsive-height-cell-3 {
+		line-height:					1.5;
+	}
+
+	.quote-begin, .quote-end {
+		width:							88px;
+		height:							88px;
+		border-radius:					88px;
+		font-size:						88px;
+	}
+
+	.quote-end {
+		margin-top:						27px;
+	}
+
+	.quote, .callout {
+		margin-top:						27px;
+
+		p {
+			font-size:						3.75em;
+			max-width:						100%;
+		}
+	}
+}
+
+.container-curriculum-open {
+	h1 {
+		font-size:						4.5em;
+		margin:							0;
+	}
+
+	h2 {
+		font-size:						3em;
+	}
+
+	img {
+		margin:							60px 0;
+		width:							75px;
+		height:							75px;
+		border-radius:					75px;
+	}
+}
+
+.container-curriculum-toc {
+	h2 {
+		font-size:						2.5em;
+	}
+
+	ul {
+		max-width:						initial;
+
+		&:last-child {
+			margin-top:						105px;
+		}
+	}
+}
+
+table.days-of-week {
+	th {
+		text-align:						right;
+
+		&::before {
+			width:							auto;
+			height:							auto;
+			padding:						3px 9px;
+			line-height:					auto;
+		}
+	}
+
+	tr:first-of-type {
+		th::before {
+			content:						"MON";
+		}
+	}
+
+	tr:nth-of-type(2) {
+		th::before {
+			content:						"TUE";
+		}
+	}
+
+	tr:nth-of-type(3) {
+		th::before {
+			content:						"WED";
+		}
+	}
+
+	tr:nth-of-type(4) {
+		th::before {
+			content:						"THU";
+		}
+	}
+
+	tr:nth-of-type(5) {
+		th::before {
+			content:						"FRI";
+		}
+	}
+}
+
+.icon-learning-episode, .icon-pdf {
+	font-size:						1.625em;
+	margin:							45px 0 0;
+}
+
+.icon-learning-episode {
+	div {
+		top:							-63px;
+		margin-bottom:					-82px;
+		margin-left:					25px;
+		min-height:						75px;
+	}
+}
+
+.icon-pdf-indent {
+	margin-left:					81px;
+}
+
+.icon-pdf {
+	&::before {
+		line-height:					1.375;
+	}
+
+	div {
+		top:							-47px;
+		margin-bottom:					-66px;
+		margin-left:					45px;
+	}
+}
+
+.tighten-1 {
+	max-width:						15em;
+}
+
+.copy-highlight {
+	padding:						4em 3em;
+	margin:							72px 0 0;
+
+	h5 {
+		font-size:						1.5em;
+	}
+}
+
+.copy-highlight + ul {
+	margin:							63px 0 0;
+}
+
+ul.category-tags {
+	max-width:						100%;
+}
+
+/*********************
+CUSTOMIZATION BY AUTHOR
+*********************/
+
+.container-curriculum-3-shana-brown {
+	.container-curriculum-toc {
+		ol li {
+			&:first-child h2 {
+				max-width:						430px;
+			}
+
+			&:nth-child(2) h3 {
+				max-width:						none;
+			}
+
+			&:nth-child(3) h2, h3 {
+				max-width:						350px;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:						410px;
+			}
+
+			&:nth-child(5) h2 {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+.container-curriculum-4-carol-buswell {
+	.container-curriculum-toc {
+		ol li {
+			&:nth-child(2) h2 {
+				max-width:						none;
+			}
+
+			&:nth-child(3) h2 {
+				max-width:						none;
+			}
+
+			&:nth-child(4) h2 {
+				max-width:						none;
+			}
+
+			&:nth-child(8) h2 {
+				max-width:						none;
+			}
+
+			&:nth-child(10) h2 {
+				max-width:						none;
+			}
+		}
+
+		ul:nth-of-type(2) {
+			li:nth-of-type(2) a {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+.container-curriculum-7-carmelita-lamb {
+	.container-curriculum-toc {
+		ol:nth-of-type(2) {
+			li:first-child h2 {
+				max-width:						none;
+			}
+		}
+	}
+}
+
+/*********************
+CONTRIBUTOR PAGE STYLES
+*********************/
+
+.page-contributor {
+	h1 {
+		font-size:						3.25em;
+		margin-top:						27px;
+
+		& + p {
+			margin-top:						63px;
+		}
+	}
+}
+
+/*********************
+INTRODUCTION PAGE STYLES
+*********************/
+
+.page-introduction {
+	.bg-introduction {
+		h1 {
+			font-size:						4.5em;
+			padding-top:					225px;
+		}
+	}
+
+	.introduction-body {
+		margin-bottom:					-180px;
+
+		.contributors-grid {
+			max-width:						none;
+
+			li {
+				width:							32.85%;
+			}
+		}
+	}
+
+	.lbl-show-chapters {
+		margin-left:					81px;
+	}
+
+	.width-constrain-1 {
+		max-width:						390px;
+	}
+
+	.width-constrain-2 {
+		max-width:						440px;
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.container-footer-content {
+	max-width:						500px;
+}
+
+.footer-logo {
+	svg {
+		height:							331px;
+	}
+}
+
+.container-copyright {
+}
+
+.copyright {
+	font-size:						0.9em;
+}

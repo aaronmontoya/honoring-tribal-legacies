@@ -1,0 +1,361 @@
+/******************************************************************
+Site Name: Honoring Tribal Legacies
+Author: Aaron Montoya
+
+Stylesheet: Super Large Monitor Stylesheet
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	margin-top:					130px;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+nav {
+	margin-top:					132px;
+}
+
+.nav-authors li {
+	font-size:					1.25em;
+}
+
+.nav-current {
+	& > div:last-child a {
+		font-size:					1.325em;
+		margin-top:					45px;
+	}
+
+	h1 {
+		font-size:					2.5em;
+	}
+
+	ol,
+	ul
+	{
+		margin-top:					45px;
+	}
+
+	ul li a {
+		font-size:					1.325em;
+	}
+
+	ol li a {
+		font-size:					1.5em;
+
+		div {
+			h2,
+			h3
+			{
+				font-size:					1.325em;
+			}
+		}
+	}
+}
+
+.nav-current-brown {
+	ol li {
+		&:first-child h2 {
+			max-width:					360px;
+		}
+
+		&:nth-child(3) h2 {
+			max-width:					290px;
+		}
+
+		&:nth-child(4) h2 {
+			max-width:					390px;
+		}
+	}
+}
+
+.nav-contributors {
+	li {
+		a.contributors-icon-anonymous {
+			font-size:					54px;
+			height:						108px;
+			line-height:				95px;
+			width:						108px;
+		}
+
+		a img {
+			height:						108px;
+			width:						108px;
+		}
+
+		h3 {
+			font-size:					2em;
+		}
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size:					4.3818em;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.logo-type {
+	font-size:					7.125em;
+}
+
+.icon-menu {
+	box-shadow:					0 5px 0 0 $black-darker;
+	font-size:					1em;
+	padding:					27px;
+	width:						103px;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.container {
+	box-shadow:					0 0 9px 0 rgba(0, 0, 0, 0.25);
+}
+
+.entry-content {
+
+	h1 {
+		margin-top:					90px;
+	}
+
+	h2,
+	h3,
+	h4
+	{
+		margin-top:					81px;
+	}
+
+	iframe {
+		height:						700px;
+	}
+
+	p,
+	ol,
+	ul,
+	div + ol,
+	div + ul,
+	h1 + ol,
+	h2 + ol,
+	h3 + ol,
+	h4 + ol,
+	h1 + ul,
+	h2 + ul,
+	h3 + ul,
+	h4 + ul
+	{
+		margin-top:					72px;
+	}
+
+	ol + ul {
+		margin-top:					0;
+	}
+
+	.caption,
+	.caption-with-toggle
+	{
+		p {
+			font-size:					1.125em;
+			line-height:				1.875;
+		}
+	}
+
+	.caption-with-toggle {
+		p {
+			height:						70px;
+		}
+	}
+
+	.icon-honey-inside-activity,
+	.icon-honey-outside-activity
+	{
+		height:						105px;
+
+		& + h3 {
+			margin-left:				108px;
+
+			& + h4 {
+				margin-top:					63px;
+			}
+		}
+	}
+
+	.icon-honey-inside-activity {
+		top:						50px;
+	}
+
+	.icon-honey-outside-activity {
+		top:						20px;
+	}
+
+	.quote {
+		margin-top:					45px;
+
+		p {
+			font-size:					6em;
+		}
+	}
+
+	.quote-end {
+		margin-top:					45px;
+	}
+}
+
+.container-curriculum-open {
+	h1 {
+		font-size:					7.5em;
+		margin:						0;
+	}
+
+	h2 {
+		font-size:					5em;
+	}
+}
+
+.tighten-1 {
+	max-width:					21em;
+}
+
+.container-curriculum-toc {
+	position:					relative;
+	margin-top:					81px;
+
+	ul {
+		display:				inline-block;
+		position:				relative;
+		left:					0;
+		bottom:					0;
+		width:					42.5%;
+		margin-top:				0;
+
+		li:first-of-type {
+			margin-top:				0;
+		}
+	}
+
+	ul:first-of-type {
+		margin-right:			90px;
+		display:				inline-block;
+		position:				relative;
+		left:					0;
+		width:					42.5%;
+	}
+
+	ul:last-of-type {
+		position:				absolute;
+		top:					0;
+		left:					47.5%;
+	}
+
+	h1 {
+		&:first-of-type	 {
+			top:					0;
+		};
+	}
+
+	h2 {
+		display:				inline-block;
+		margin-right:			60px;
+	}
+
+	.icon-learning-episode {
+		margin-top:				30px;
+	}
+}
+
+.container-curriculum-7-carmelita-lamb {
+	.container-curriculum-toc-ul {
+		&:first-of-type {
+			top:					-485px;
+		}
+	}
+}
+
+.icon-learning-episode h2 {
+	display:				block;
+	float:					none;
+}
+
+table.days-of-week {
+	tr {
+		display:				inline-block;
+		width:					20%;
+		vertical-align:			top;
+	}
+
+	th {
+		display:				block;
+		text-align:				left;
+	}
+
+	td {
+		padding:				18px 18px 0 0;
+
+		a {
+			-moz-hyphens:			manual;
+			word-break:				break-all;
+		}
+	}
+
+	.icon-pdf::before {
+		padding:				9px;
+		word-break:				break-word;
+	}
+}
+
+/*********************
+INTRODUCTION PAGE STYLES
+*********************/
+.page-introduction {
+	.bg-introduction {
+		left:					inherit;
+		margin-left:			-27px;
+	}
+
+	.container-btn-access-curricula .btn-access-curricula {
+		font-size:				1.5em;
+		margin-top:				63px;
+	}
+
+	.introduction-body {
+		padding-bottom:			180px;
+
+		.contributors-grid {
+			li {
+				width:				24.75%;
+			}
+		}
+	}
+}
+
+/*********************
+FORM STYLES
+*********************/
+
+div.wpcf7-response-output {
+	font-size:			1.5em;
+}
+
+input[type="submit"] {
+	font-size:			1.5em;
+	padding:			18px 36px;
+}
+
+.wpcf7-form {
+	p {
+    	font-size:          1.5em;
+    	margin:             27px 36px 0;
+	}
+}
