@@ -1,2 +1,2 @@
 Honoring Tribal Legacies 1.0
-WordPress Theme
+Select PHP, jQuery, CSS, images and HTML written for custom WordPress theme.
